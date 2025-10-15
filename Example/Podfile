@@ -1,0 +1,21 @@
+use_frameworks!
+
+#source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+source 'http://bj.gitlab.cnlive.com/ios-team/CNLiveRepos.git'
+
+
+platform :ios, '9.0'
+
+target 'CNLiveNetPlusBusinessServiceModule_Example' do
+  pod 'CNLiveNetPlusBusinessServiceModule', :path => '../'
+  pod 'CNLiveBeeHive'
+  pod 'CNLiveBServices'
+  pod 'CNLiveBaseClass'
+  
+  target 'CNLiveNetPlusBusinessServiceModule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
